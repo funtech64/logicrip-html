@@ -1,33 +1,84 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: Georgia, serif;
+  background-color: #fdfdfd;
+  color: #222;
+}
+
+header {
+  background: #e0ecf5;
+  padding: 1.5rem;
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2a5d8f;
+  margin-bottom: 0.2rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #555;
 }
 
 .content-area {
   display: flex;
+  flex-direction: row-reverse;
+  min-height: 90vh;
 }
 
 .sidebar {
-  width: 200px;
-  background-color: #f2f2f2;
+  width: 250px;
+  background: #f2f4f7;
+  border-left: 1px solid #ccc;
   padding: 1rem;
+  overflow-y: auto;
 }
 
-.main-content {
-  flex: 1;
-  padding: 1rem;
+.sidebar h3 {
+  margin-top: 1.5rem;
+  color: #2a5d8f;
+  font-size: 1.1rem;
 }
 
-.sidebar nav ul {
+.sidebar ul {
   list-style: none;
   padding-left: 0;
 }
 
-.sidebar nav li {
-  margin: 0.5rem 0;
+.sidebar li {
+  margin: 0.4rem 0;
 }
 
-.sidebar nav h3 {
-  margin-top: 1rem;
+.sidebar a {
+  text-decoration: none;
+  color: #1a3c66;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.logicrocket-promo {
+  border: 1px dashed #999;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #eef5fc;
+}
+
+footer {
+  background: #e0ecf5;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+footer a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #2a5d8f;
 }
