@@ -1,10 +1,11 @@
 // Expect FALLACIES to be loaded before this script
 
-const sidebar = document.querySelector('.sidebar nav ul');
+const sidebarContainer = document.querySelector('.sidebar');
+const sidebar = document.querySelector('.sidebar ul');
 const toggleBtn = document.createElement('button');
 toggleBtn.textContent = 'Switch to .info View';
 toggleBtn.style.marginBottom = '1rem';
-document.querySelector('.sidebar nav').prepend(toggleBtn);
+sidebarContainer.prepend(toggleBtn);
 
 let currentView = 'logicrocket';
 
