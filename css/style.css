@@ -23,6 +23,12 @@ header p {
   color: #555;
 }
 
+header img.banner {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
 .content-area {
   display: flex;
   flex-direction: row-reverse;
