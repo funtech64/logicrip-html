@@ -23,6 +23,17 @@ header p {
   color: #555;
 }
 
+header nav.quick-nav {
+  margin-top: 0.5rem;
+}
+
+header nav.quick-nav a {
+  margin: 0 0.5rem;
+  color: #2a5d8f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 header img.banner {
   max-width: 100%;
   height: auto;
@@ -87,4 +98,16 @@ footer a {
   margin: 0 0.5rem;
   text-decoration: none;
   color: #2a5d8f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
 }

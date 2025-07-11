@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fallacy Tables | Logical Fallacies</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Logical Fallacies</h1>
+    <p>An Encyclopedia of Errors in Reasoning</p>
+    <nav class="quick-nav">
+      <a href="index.html">Home</a>
+      <a href="tables.html">Tables</a>
+    </nav>
+    <img src="/fallacies-fun-logo.png" alt="Logical Fallacies banner" class="banner">
+  </header>
+
+  <main class="content-area">
+    <article class="main-content">
+      <h2>Fallacy Table</h2>
+      <p id="instructions">Click a fallacy name to view a detailed page.</p>
+      <table id="fallacy-table">
+        <thead>
+          <tr><th>#</th><th>Name</th><th>Group</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 Logical Fallacies |
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="terms.html">Terms</a>
+  </footer>
+
+  <script src="/js/fallacies.js"></script>
+  <script>
+    function slugify(text) {
+      return text.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    }
+    const tbody = document.querySelector('#fallacy-table tbody');
+    FALLACIES.sort((a,b) => a.number - b.number).forEach(f => {
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${f.number}</td><td><a href="/fallacies/${slugify(f.name)}.html">${f.name}</a></td><td>${f.group}</td>`;
+      tbody.appendChild(row);
+    });
+  </script>
+</body>
+</html>
