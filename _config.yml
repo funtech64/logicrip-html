@@ -1,0 +1,5 @@
+title: Logical Fallacies
+baseurl: ""
+# build settings
+markdown: kramdown
+permalink: pretty
